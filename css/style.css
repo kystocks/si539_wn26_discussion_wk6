@@ -1,0 +1,136 @@
+/*
+    SI 539 - Discussion 6: YOUR Stylesheet
+    =======================================
+    Edit ONLY this file. Follow the TODO steps.
+
+    KEY CONCEPT — Container vs. Item:
+    • CONTAINER (parent): display: grid, grid-template-columns, gap
+    • ITEM (child):       grid-column, grid-row, order
+
+    Ask yourself: "Am I styling the container or the item?"
+*/
+
+
+
+/* =====================================================
+   PART 1: ACCESSIBILITY (Steps 1–3)
+   ===================================================== */
+
+
+/* --- Step 1: Hide the Skip Link Off-Screen ---
+ *
+ * TODO: Position the .skip-link above the viewport so it's
+ *       hidden but still accessible to screen readers.
+ *       Give it button-like styling (background, color, padding)
+ *       so it looks good when it appears in Step 2.
+ */
+
+/* YOUR CODE: */
+
+
+
+
+/* --- Step 2: Show the Skip Link on Focus ---
+ *
+ * TODO: When .skip-link receives :focus, move it back
+ *       into view so keyboard users can see it.
+ */
+
+/* YOUR CODE: */
+
+
+
+
+/* --- Step 3: Focus Styles on Nav Links ---
+ *
+ * TODO: Add a clearly visible focus indicator to nav a
+ *       so keyboard users can tell which link is selected.
+ *       The default browser outline is hard to see on the
+ *       dark nav background — make yours stand out.
+ */
+
+/* YOUR CODE: */
+
+
+
+
+/* =====================================================
+   PART 2: RESPONSIVE GRID (Steps 4–6)
+   =====================================================
+   Mobile-first:
+     Base styles       → mobile (1 column)
+     @media 768px      → tablet (2 columns)
+     @media 1024px     → desktop (4 columns, alternating)
+*/
+
+
+/* --- Step 4: Mobile Base Styles (1 Column) ---
+ *
+ * TODO: Make .content-container a single-column grid with
+ *       some space between sections.
+ *
+ * TODO: Make each .content-section its own single-column
+ *       grid so the image stacks above the text.
+ */
+
+/* YOUR CODE for .content-container: */
+
+
+
+/* YOUR CODE for .content-section: */
+
+
+
+
+/* --- Step 5: Tablet at 768px (2 Columns) ---
+ *
+ * TODO: Write a media query for 768px and up.
+ *       Change each .content-section to display its image
+ *       and text side by side in two equal columns.
+ *       Vertically center the items within their row.
+ *
+ * TODO: Make the second section look different by pushing
+ *       its image to the right side using the order property.
+ */
+
+/* YOUR CODE: */
+
+
+
+
+/* --- Step 6: Desktop at 1024px (4 Columns, Alternating) ---
+ *
+ * TODO: Write a media query for 1024px and up.
+ *
+ * This step has three parts — you need BOTH container
+ * and item properties to make it work.
+ *
+ * A) CONTAINER: Change .content-section to a 4-column grid.
+ *
+ * B) ITEMS: Make .section-image span the left two columns and
+ *    .section-text span the right two columns. Force both onto
+ *    the same row.
+ *
+ *    Column LINES for a 4-column grid:
+ *      1     2     3     4     5
+ *      | col | col | col | col |
+ *
+ * C) ALTERNATING: For the 2nd section only, flip it —
+ *    text on the left two columns, image on the right two columns.
+ *    Use :nth-child(2) to target that section.
+ */
+
+/* YOUR CODE: */
+
+
+
+
+/* =====================================================
+   PART 3: BONUS — Flexbox Footer (if you finish early)
+   =====================================================
+ *
+ * TODO: Convert the footer to use Flexbox for centering
+ *       instead of text-align.
+ */
+
+/* YOUR BONUS CODE: */
