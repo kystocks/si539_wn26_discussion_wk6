@@ -5,10 +5,11 @@
     You will write your code in style.css.
 
     This file handles:
-    - Basic typography
-    - Simple color scheme
-    - Basic header/nav and footer colors
-    - Hero section background
+    - Basic typography and colors
+    - Complete navigation styling
+    - Complete hero section styling
+    - Complete footer styling
+    - Basic card appearance for content sections
 */
 
 
@@ -20,14 +21,24 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
 }
 
 h2 {
     font-size: 1.75rem;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 img {
@@ -42,20 +53,39 @@ a {
 
 
 /* ========================================
-   HEADER & NAVIGATION
+   HEADER & NAVIGATION (fully styled)
    ======================================== */
 
 header {
     background-color: #2c3e50;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 nav a {
     color: #ecf0f1;
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #34495e;
 }
 
 
 /* ========================================
-   HERO SECTION
+   HERO SECTION (fully styled)
    ======================================== */
 
 .hero {
@@ -63,14 +93,65 @@ nav a {
     background-size: cover;
     background-position: center;
     min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Dark overlay for text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content p {
+    color: #ecf0f1;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
 }
 
 
 /* ========================================
-   FOOTER
+   CONTENT SECTIONS (basic card styling)
+   ======================================== */
+
+.content-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-text {
+    padding: 1.5rem;
+}
+
+
+/* ========================================
+   FOOTER (fully styled)
    ======================================== */
 
 footer {
     background-color: #2c3e50;
     color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
 }
