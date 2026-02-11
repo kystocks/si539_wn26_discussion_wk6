@@ -30,6 +30,10 @@
  * so it looks good when it appears in Step 2.
  */
 
+main {
+    border: red 20px solid;
+}
+
 .skip-link {
     position: absolute;
     top: -60px;
